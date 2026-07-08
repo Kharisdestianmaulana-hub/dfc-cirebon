@@ -1,0 +1,264 @@
+/* --- GLOBAL RESET --- */
+* { box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7fc;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* --- SIDEBAR FLEXBOX LAYOUT --- */
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid #eee;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sidebar-header { flex-shrink: 0; background: white; z-index: 2; }
+.sidebar-menu {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 0 20px 0;
+}
+.sidebar-menu::-webkit-scrollbar { width: 6px; }
+.sidebar-menu::-webkit-scrollbar-track { background: transparent; }
+.sidebar-menu::-webkit-scrollbar-thumb { background: #ddd; border-radius: 10px; }
+.sidebar-menu::-webkit-scrollbar-thumb:hover { background: #ccc; }
+
+.brand {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ff0000;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+.brand-text { font-size: 20px; font-weight: 800; color: #ff0000; letter-spacing: 0.5px; }
+
+.menu-title {
+    padding: 0 25px;
+    margin: 20px 0 8px 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #aab8c5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 25px;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    border-right: 3px solid transparent;
+}
+.sidebar a:hover,
+.sidebar a.active {
+    background: #fff5f5;
+    color: #ff0000;
+    border-right-color: #ff0000;
+}
+.sidebar a i { font-size: 20px; }
+
+.sidebar-footer {
+    flex-shrink: 0;
+    border-top: 1px solid #eee;
+    padding: 16px 20px;
+    background: white;
+    z-index: 2;
+    width: 100%;
+}
+.sidebar-footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background: #fff5f5;
+    color: #ff4757;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+    border-right: none;
+}
+.sidebar-footer a:hover { background: #ffebeb; border-right: none; }
+
+/* --- CONTENT STYLES --- */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 260px);
+    min-height: 100vh;
+}
+
+/* ========================================================
+   APP BAR / HEADER TITLE (BERLAKU UNTUK DESKTOP & MOBILE)
+   ======================================================== */
+.header-title,
+.page-header,
+.content > h2 {
+    position: sticky;
+    top: 0;
+    background: #f4f7fc; /* Warna background sama dengan body */
+    z-index: 980;
+    height: 70px;
+    
+    /* Menarik box ke ujung konten untuk menutupi padding bawaan .content (30px) */
+    margin: -30px -30px 25px -30px; 
+    padding: 0 30px; /* Jarak teks dari tepi layar desktop */
+    
+    border-bottom: 1px solid #e1e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Khusus untuk halaman Dashboard yang punya Judul & Subjudul */
+.header-title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Khusus halaman biasa tanpa tombol tambah (Hanya H2 murni) */
+.content > h2 {
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+/* Ukuran Teks Header Desktop */
+.header-title h2,
+.page-header h2,
+.content > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.2;
+}
+
+.header-title p {
+    margin: 4px 0 0 0;
+    color: #636e72;
+    font-size: 13px;
+    line-height: 1;
+}
+
+/* --- OVERLAY --- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+.overlay.active { display: block; }
+
+/* --- TOMBOL MENU MOBILE --- */
+.mobile-toggle { display: none; }
+
+/* ========================================================
+   RESPONSIVE — MOBILE (max-width: 768px)
+   ======================================================== */
+@media (max-width: 768px) {
+
+    .sidebar { left: -260px; }
+    .sidebar.open { left: 0; }
+
+    /* Paksa padding atas hilang agar nempel mentok ke layar */
+    .content {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 0 15px 20px 15px !important;
+    }
+
+    /* 1. TOMBOL MELAYANG PRESISI */
+    .mobile-toggle {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 13px !important; 
+        left: 15px !important;
+        width: 44px !important;
+        height: 44px !important;
+        background: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 990 !important; 
+        box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+        transition: transform 0.2s;
+        margin: 0 !important;
+    }
+    .mobile-toggle:active { transform: scale(0.9); }
+
+    /* 2. PENYESUAIAN APP BAR UNTUK MOBILE */
+    .header-title,
+    .page-header,
+    .content > h2 {
+        /* Sesuaikan margin dengan padding baru .content di mobile */
+        margin: 0 -15px 20px -15px !important; 
+        
+        /* INI KUNCI UTAMANYA: Jarak kiri 70px untuk menggeser teks dari tombol merah */
+        padding: 0 15px 0 70px !important; 
+    }
+
+    /* 3. PENYESUAIAN UKURAN TEKS MOBILE */
+    .header-title h2,
+    .page-header h2,
+    .content > h2 {
+        font-size: 17px !important;
+    }
+    
+    .header-title p {
+        font-size: 12px !important;
+    }
+
+    /* 4. RAPIKAN TOMBOL "+ TAMBAH" */
+    .page-header .btn-add {
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+        height: fit-content !important;
+        margin: 0 !important;
+    }
+}
