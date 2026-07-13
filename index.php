@@ -1,6 +1,3 @@
 <?php
-if( !session_id() ) session_start();
-
-require_once 'app/init.php';
-
-$app = new App;
+require_once __DIR__ . '/controller/AuthController.php';
+(new AuthController())->login();
