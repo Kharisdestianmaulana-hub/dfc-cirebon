@@ -1,0 +1,161 @@
+<mxfile host="app.diagrams.net" modified="2026-10-11T00:00:00.000Z" agent="DFC Cirebon" version="24.0.0" type="device">
+  <diagram id="erd-dfc-cirebon" name="ERD DFC Cirebon">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="judul" value="ERD - Aplikasi DFC Cirebon (Versi Laravel)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1f2937;" vertex="1" parent="1">
+          <mxGeometry x="630" y="20" width="640" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ket" value="Keterangan: PK = Primary Key, FK = Foreign Key, UQ = Unique, IDX = Indeks" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#4b5563;" vertex="1" parent="1">
+          <mxGeometry x="630" y="60" width="640" height="24" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_lokasi" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#2563eb&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;lokasi&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;alamat&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;map_query&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kategori&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;latitude&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;longitude&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;telepon&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username_admin&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mitra_username&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;qris_image&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#2563eb;fillColor=#ffffff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="240" height="310" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_admin" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#2563eb&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;admin (karyawan outlet)&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;UQ&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_outlet&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kode_outlet&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nomor_wa&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#2563eb;fillColor=#ffffff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="80" y="470" width="240" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_menu" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#2563eb&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;menu&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;harga&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gambar&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kategori&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pemilik_menu&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#2563eb;fillColor=#ffffff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="240" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_stok_outlet" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#7c3aed&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;stok_outlet&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;menu_id&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kode_outlet&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stok&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;UQ (menu_id, kode_outlet)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#7c3aed;fillColor=#faf5ff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="240" height="220" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_pengaturan" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#2563eb&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;pengaturan_toko&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kode_outlet&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_outlet&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status (buka/tutup)&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;no_hp&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#2563eb;fillColor=#ffffff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="800" y="120" width="240" height="200" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_transaksi" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#059669&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;transaksi_pesanan&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;order_id&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;UQ&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_pemesan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;no_hp&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kode_outlet&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;total_bayar&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;metode_bayar&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;detail_pesanan (JSON)&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status_pesanan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu_pesan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at / updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#059669;fillColor=#ecfdf5;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="800" y="380" width="240" height="300" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_chat_pesanan" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#059669&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;chat_pesanan&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;order_id&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;IDX&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pengirim&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pesan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;is_read&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at / updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#059669;fillColor=#ecfdf5;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="380" width="240" height="240" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_penjualan" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#0891b2&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;penjualan_harian&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tanggal&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kode_outlet&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_menu&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;qty&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;harga_satuan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;subtotal&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;catatan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at / updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#0891b2;fillColor=#ecfeff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="120" width="240" height="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_laporan" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#0891b2&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;laporan_keuangan&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tanggal&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kode_outlet&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;omzet_kotor&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pengeluaran&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;omzet_bersih&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;catatan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu_input&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;UQ (tanggal, kode_outlet)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#0891b2;fillColor=#ecfeff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="440" width="240" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_stok_gudang" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#dc2626&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;stok_gudang&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mitra_username&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kategori&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_barang&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stok&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;satuan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;created_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;updated_at&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#dc2626;fillColor=#fef2f2;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="80" y="740" width="240" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_riwayat_stok" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#dc2626&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;riwayat_stok&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mitra_username&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_barang&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stok_lama&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stok_baru&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;selisih&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;admin&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#dc2626;fillColor=#fef2f2;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="440" y="680" width="240" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_request_stok" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#d97706&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;request_stok&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_outlet&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#0891b2&quot;&gt;FK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_barang&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;jumlah&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;satuan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;alasan_tolak&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu_request&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#d97706;fillColor=#fffbeb;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="800" y="740" width="240" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_log" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#475569&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;log_aktivitas&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;waktu&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pelaku&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;aksi&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;detail&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#475569;fillColor=#f8fafc;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="740" width="240" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_pengajuan" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#7c3aed&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;pengajuan_mitra&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;whatsapp&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lokasi_usaha&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pesan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tanggal&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#7c3aed;fillColor=#faf5ff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1010" width="240" height="200" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_akun_mitra" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#7c3aed&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;akun_mitra&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_mitra&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;UQ&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#7c3aed;fillColor=#faf5ff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="440" y="960" width="240" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_admin_gudang" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#2563eb&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;admin_gudang&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#d97706&quot;&gt;UQ&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nama_lengkap&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#2563eb;fillColor=#ffffff;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1030" width="240" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_profil" value="&lt;table border=&quot;0&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; bgcolor=&quot;#475569&quot; align=&quot;center&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;profil_perusahaan&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;id&lt;/b&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;font color=&quot;#2563eb&quot;&gt;PK&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sejarah&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;visi&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;misi&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#475569;fillColor=#f8fafc;fontSize=12;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1020" width="240" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_lokasi_admin" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#0891b2;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_lokasi" target="t_admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_lokasi_admin_lbl" value="1 : 1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#0891b2;" vertex="1" connectable="0" parent="r_lokasi_admin">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_menu_stok" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#7c3aed;strokeWidth=2;" edge="1" parent="1" source="t_menu" target="t_stok_outlet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_menu_stok_lbl" value="1 : N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#7c3aed;" vertex="1" connectable="0" parent="r_menu_stok">
+          <mxGeometry x="-0.15" y="-1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_pengaturan_lokasi" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#0891b2;strokeWidth=2;dashed=1;" edge="1" parent="1" source="t_pengaturan" target="t_lokasi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_pengaturan_lokasi_lbl" value="kode_outlet : username" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#0891b2;" vertex="1" connectable="0" parent="r_pengaturan_lokasi">
+          <mxGeometry x="-0.25" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_transaksi_penjualan" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#059669;strokeWidth=2;" edge="1" parent="1" source="t_penjualan" target="t_transaksi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_transaksi_penjualan_lbl" value="kode_outlet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#059669;" vertex="1" connectable="0" parent="r_transaksi_penjualan">
+          <mxGeometry x="0.1" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_transaksi_chat" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#059669;strokeWidth=2;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_transaksi" target="t_chat_pesanan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_transaksi_chat_lbl" value="order_id (1 : N)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#059669;" vertex="1" connectable="0" parent="r_transaksi_chat">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_laporan_penjualan" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#0891b2;strokeWidth=2;" edge="1" parent="1" source="t_laporan" target="t_penjualan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_laporan_penjualan_lbl" value="kode_outlet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#0891b2;" vertex="1" connectable="0" parent="r_laporan_penjualan">
+          <mxGeometry x="0.1" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_gudang_riwayat" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#dc2626;strokeWidth=2;" edge="1" parent="1" source="t_stok_gudang" target="t_riwayat_stok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_gudang_riwayat_lbl" value="nama_barang" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#dc2626;" vertex="1" connectable="0" parent="r_gudang_riwayat">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_request_gudang" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d97706;strokeWidth=2;" edge="1" parent="1" source="t_request_stok" target="t_stok_gudang">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_request_gudang_lbl" value="nama_barang" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#d97706;" vertex="1" connectable="0" parent="r_request_gudang">
+          <mxGeometry x="0.2" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_request_lokasi" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#0891b2;strokeWidth=2;dashed=1;" edge="1" parent="1" source="t_request_stok" target="t_pengaturan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_request_lokasi_lbl" value="nama_outlet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#0891b2;" vertex="1" connectable="0" parent="r_request_lokasi">
+          <mxGeometry x="0.15" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_mitra_pengajuan" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#7c3aed;strokeWidth=2;" edge="1" parent="1" source="t_pengajuan" target="t_akun_mitra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_mitra_pengajuan_lbl" value="alur pendaftaran" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#7c3aed;" vertex="1" connectable="0" parent="r_mitra_pengajuan">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_catatan" value="&lt;b&gt;Catatan Normalisasi&lt;/b&gt;&lt;br&gt;Pada versi native, stok tiap outlet disimpan sebagai kolom dinamis bernama stok_&amp;lt;username&amp;gt;.&lt;br&gt;Di versi Laravel, struktur ini dinormalisasi menjadi tabel &lt;b&gt;stok_outlet&lt;/b&gt; dengan&lt;br&gt;pasangan (menu_id, kode_outlet) sebagai kunci unik.&lt;br&gt;&lt;br&gt;Tabel &lt;b&gt;chat_pesanan&lt;/b&gt; ditambahkan agar percakapan pesanan yang ada pada basis data&lt;br&gt;asli DFC Cirebon dapat dipakai aplikasi.&lt;br&gt;&lt;br&gt;Relasi yang digambar putus-putus (dashed) adalah relasi logis berbasis kode,&lt;br&gt;bukan foreign key fisik, karena tetap dipertahankan demi kompatibilitas data." style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=1;strokeColor=#94a3b8;fillColor=#f1f5f9;fontSize=11;fontColor=#1f2937;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1290" width="1160" height="170" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
