@@ -1,0 +1,133 @@
+LISENSI PERANGKAT LUNAK
+Aplikasi DFC Cirebon (Dexpress Fried Chicken)
+
+Hak Cipta (c) 2026 DFC Cirebon dan Universitas Catur Insan Cendekia
+Seluruh hak cipta dilindungi undang-undang.
+
+--------------------------------------------------------------------------
+1. PENERIMA LISENSI
+--------------------------------------------------------------------------
+
+Perangkat lunak ini dikembangkan dan dimiliki bersama oleh:
+
+  a. DFC Cirebon (Dexpress Fried Chicken)
+     Sebagai pemilik sistem usaha dan pemegang kepentingan atas
+     aplikasi manajemen restoran ini.
+
+  b. Universitas Catur Insan Cendekia (UCIC)
+     Sebagai institusi pendidikan yang menaungi penyusunan perangkat
+     lunak ini untuk keperluan akademik.
+
+--------------------------------------------------------------------------
+2. HAK YANG DIBERIKAN
+--------------------------------------------------------------------------
+
+Dengan lisensi ini, diberikan hak yang tidak eksklusif dan tidak dapat
+dipindahkan kepada pihak yang memperoleh perangkat lunak ini, untuk:
+
+  a. Menggunakan perangkat lunak ini untuk keperluan operasional
+     DFC Cirebon.
+
+  b. Menggunakan perangkat lunak ini sebagai bahan pembelajaran dan
+     rujukan akademik di lingkungan Universitas Catur Insan Cendekia.
+
+  c. Menyalin perangkat lunak ini untuk keperluan arsip dan pencadangan.
+
+  d. Mengubah dan menyesuaikan perangkat lunak ini sesuai kebutuhan
+     internal pemiliknya.
+
+--------------------------------------------------------------------------
+3. PEMBATASAN
+--------------------------------------------------------------------------
+
+Tanpa izin tertulis dari pemegang hak cipta, penerima lisensi dilarang:
+
+  a. Menjual, menyewakan, atau mengalihkan perangkat lunak ini untuk
+     memperoleh keuntungan komersial.
+
+  b. Menghapus atau mengubah pemberitahuan hak cipta yang tercantum
+     pada berkas kode sumber maupun dokumentasi.
+
+  c. Mengklaim perangkat lunak ini sebagai karya pihak lain tanpa
+     menyebutkan pemilik aslinya.
+
+  d. Mendistribusikan perangkat lunak ini sebagai produk miliknya
+     sendiri tanpa izin tertulis.
+
+--------------------------------------------------------------------------
+4. ATRIBUSI
+--------------------------------------------------------------------------
+
+Setiap penggunaan, kutipan, atau pengembangan turunan wajib
+mencantumkan atribusi sebagai berikut:
+
+  "Aplikasi DFC Cirebon, dikembangkan oleh DFC Cirebon bersama
+   Universitas Catur Insan Cendekia."
+
+--------------------------------------------------------------------------
+5. KOMPONEN PIHAK KETIGA
+--------------------------------------------------------------------------
+
+Perangkat lunak ini dibangun di atas kerangka kerja dan pustaka pihak
+ketiga yang tunduk pada lisensi masing-masing:
+
+  a. Laravel Framework
+     Lisensi MIT, hak cipta Taylor Otwell.
+     https://laravel.com
+
+  b. Bootstrap
+     Lisensi MIT, hak cipta Twitter, Inc.
+     https://getbootstrap.com
+
+  c. Font Awesome
+     Lisensi CC BY 4.0, hak cipta Fonticons, Inc.
+     https://fontawesome.com
+
+  d. Chart.js
+     Lisensi MIT.
+     https://www.chartjs.org
+
+  e. SweetAlert2
+     Lisensi MIT.
+     https://sweetalert2.github.io
+
+  f. Leaflet
+     Lisensi BSD 2-Clause, hak cipta Volodymyr Agafonkin.
+     https://leafletjs.com
+
+  g. Phosphor Icons
+     Lisensi MIT.
+     https://phosphoricons.com
+
+  h. Google Fonts Poppins
+     Lisensi SIL Open Font License 1.1.
+     https://fonts.google.com
+
+Ketentuan pada butir 5 ini berlaku terpisah dan tidak mengubah syarat
+serta ketentuan lisensi utama perangkat lunak ini.
+
+--------------------------------------------------------------------------
+6. PENAFIAN JAMINAN
+--------------------------------------------------------------------------
+
+PERANGKAT LUNAK INI DISEDIAKAN SEBAGAIMANA ADANYA TANPA JAMINAN DALAM
+BENTUK APA PUN, BAIK TERSURAT MAUPUN TERSIRAT. PEMEGANG HAK CIPTA TIDAK
+BERTANGGUNG JAWAB ATAS KERUGIAN YANG TIMBUL AKIBAT PENGGUNAAN PERANGKAT
+LUNAK INI.
+
+--------------------------------------------------------------------------
+7. PENYUSUN
+--------------------------------------------------------------------------
+
+Nama       : Muhammad Arif Triyana
+Nomor Induk: 20251020011
+Program    : Teknik Informatika
+Institusi  : Universitas Catur Insan Cendekia
+Tahun      : 2026
+
+--------------------------------------------------------------------------
+8. KONTAK
+--------------------------------------------------------------------------
+
+Pertanyaan mengenai lisensi ini dapat disampaikan kepada DFC Cirebon
+melalui kanal resmi yang tercantum pada aplikasi.
